@@ -1,26 +1,17 @@
 import Head from 'next/head'
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-//import styles from '../styles/Home.module.css'
+import Layout from '@components/layout/Layout';
 
 function Home() {
 
   const { t } = useTranslation('home');
 
   return (
-    <div>
-      <Head>
-        <title> {t('head')} </title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1>
-          {t('title')}
-        </h1>
-      </main>
-    </div>
-  )
+    <Layout>
+      {t('title')}
+    </Layout>
+  );
 }
 
 export const getStaticProps = async ({ locale }) => ({
