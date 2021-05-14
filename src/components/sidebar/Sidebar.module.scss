@@ -1,0 +1,138 @@
+.sidebar{
+
+    background: linear-gradient(180.45deg, #53ED88 -25.38%, #17BEF3 319.58%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+
+    &__logoContainer{
+        display: none;
+    }
+
+    &__companyContainer{
+        display: none;
+    }
+
+    &__itemContainer{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item{
+        padding: 1.8rem 0;
+        display: flex;
+        justify-content: center;
+        flex-basis: 33%;
+    }
+    
+    &__itemTitle{
+        display: none
+    }
+
+    &__icon{
+        color: #FFFFFF;
+        width: 4rem;
+    }
+
+    &__currentItem{
+        @extend .sidebar__item;
+        background: rgba(184, 255, 217, 0.38)
+    }
+
+    &__rocketImage{
+        display: none;
+    }
+
+    @media only screen  and (min-width : 833px){
+        height: 100%;
+        width: 7.5rem;
+        display: grid;
+        grid-template-areas:"logo"
+                            "items"
+                            "none";
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+
+        
+        &__logoContainer{
+            background-color:#F3F5FD;
+            box-shadow: 0px 0px 10.2985px rgba(150, 150, 150, 0.07);
+            border-radius: 17.1641px;
+            grid-area: logo;
+            margin-top: 3rem;
+            place-self: start center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4.2rem;
+            height: 4.2rem;
+        }
+
+        &__itemContainer{
+            grid-area: items;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        
+        &__item{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__itemTitle{
+            display: block;
+            font-size: .9rem;
+            color: #FFFFFF;
+        }
+    }
+    @media only screen and (min-width : 1200px){
+        width: 16rem;
+        border-radius: 0 25px 25px 0;
+        grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
+        row-gap: 1rem;        
+        &__logoContainer{
+            grid-row: 1/2;
+        }
+
+        &__companyContainer{
+            display: flex;
+            justify-content: center;
+            grid-row: 2/3;
+            background: #FFFFFF;
+            place-self: center;
+            opacity: 0.5;
+            box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            width: 80%;
+            height: 4rem;
+        }
+        
+        &__itemContainer{
+            grid-row: 3/4;
+        }
+
+        &__item{
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 1.8rem 1.3rem;
+        }
+
+        &__itemTitle{
+            margin-left: .9rem;
+            font-size: 1.1rem;
+        }
+
+        &__rocketImage{
+            grid-row: 5/6;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
