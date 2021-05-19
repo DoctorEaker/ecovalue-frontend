@@ -1,6 +1,10 @@
 // Tailwind Css
 @import "tailwind.scss";
 
+// Settings styles
+@import 'settings/colors';
+@import 'settings/variables';
+
 // Core styles
 @import 'core/fonts';
 @import 'core/typography';
