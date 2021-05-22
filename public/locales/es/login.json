@@ -1,4 +1,10 @@
 {
     "title": "Bienvenido a",
-    "subtitle": "Parrafo sobre lo mucho que valoramos que uses nuestra plataforma y para llenar espacio"
+    "subtitle": "Parrafo sobre lo mucho que valoramos que uses nuestra plataforma y para llenar espacio",
+    "place_holder_1": "correo@ejemplo.com",
+    "place_holder_2": "Tu contraseña",
+    "button": "Iniciar sesión",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "image_alt": "Conoce tu salud financiera y potencia tu negocio tomando decisiones de calidad",
+    "learn_more": "Conoce más"
 }
