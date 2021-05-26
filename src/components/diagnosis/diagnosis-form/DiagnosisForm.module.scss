@@ -1,0 +1,37 @@
+.diagnosis{
+    background-color: #6AE6CF;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". title ."
+                        ". form .";
+
+    &__title{
+        grid-area: title;
+        place-self: center center;
+        color: #ffff;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+}
+
+.form{
+    grid-area: form;
+    background-color: #FFFFFF;
+    opacity: 0.93;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+
+    &__title{
+        color: #28B098;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    &__label{
+        color: #7E80AB;
+    }
+}
