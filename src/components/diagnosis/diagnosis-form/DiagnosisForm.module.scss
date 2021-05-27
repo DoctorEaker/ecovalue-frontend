@@ -6,7 +6,7 @@
     grid-template-areas:
         "title"
         "form";
-    padding: 0 .4rem;
+    padding: 1rem .8rem;
     &__title {
         grid-area: title;
         place-self: center center;
@@ -16,7 +16,7 @@
     }
     
     @media only screen and (min-width: 700px) and (max-width: 1050px) {
-        padding: 0 2rem;
+        padding: 2rem 2rem;
     }
 
     @media only screen and (min-width: 1050px) and (max-width: 1449px) {
@@ -42,12 +42,12 @@
 }
 
 .form {
-    
+
     grid-area: form;
     background-color: #ffffff;
     opacity: 0.93;
     border-radius: 10px;
-    padding: 1rem 1rem;
+    padding: 1rem 1.6rem;
 
     &__title {
         color: #28b098;
@@ -65,7 +65,11 @@
         justify-content: space-between;
         align-items: baseline;
         flex-wrap: wrap;
-        margin: 1rem 0;
+        margin: 0 0 3rem 0;
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 1050px) {
+        padding: 1rem 2rem;
     }
 
     @media only screen and (min-width: 1050px) and (max-width: 1449px) {
