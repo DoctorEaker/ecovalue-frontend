@@ -4,7 +4,8 @@ import styles from './DiagnosisForm.module.scss';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Input from '@/components/base/text-field/TextField';
+import TextField from '@/components/base/text-field/TextField';
+import Button from '@components/base/button/Button';
 
 function DiagnosisForm() {
     const { t } = useTranslation('diagnosis');
@@ -14,6 +15,51 @@ function DiagnosisForm() {
         setSelectedValue(event.target.value);
     };
 
+    const inputs = [
+        {
+            label: 'current_asset'
+        },
+        {
+            label: 'current_liability'
+        },
+        {
+            label: 'last_sell'
+        },
+        {
+            label: 'penultime_sell'
+        },
+        {
+            label: 'asset'
+        },
+        {
+            label: 'liability'
+        },
+        {
+            label: 'free_cash_flow'
+        },
+        {
+            label: 'cost_commodity'
+        },
+        {
+            label: 'operational_expenses'
+        },
+        {
+            label: 'net_profit'
+        }
+        ,
+        {
+            label: 'pay_day_supplier',
+            placeholder: 'days_placeholder'
+        },
+        {
+            label: 'amount_employee',
+            placeholder: 'number_placeholder'
+        },
+        {
+            label: 'foundation_year',
+            placeholder: '1985'
+        }
+    ]
     return (
         <div className={styles.diagnosis}>
             <h1 className={styles.diagnosis__title}>
@@ -39,7 +85,22 @@ function DiagnosisForm() {
                         label={t('quarterly')}
                         value="quarterly"
                     />
+                    <FormControlLabel
+                        color="default"
+                        control={<Radio color="primary" />}
+                        label={t('monthly')}
+                        value="monthly"
+                    />
                 </RadioGroup>
+                <div className={styles.form__inputRow}>
+                    {
+                        inputs.map((item) => item.hasOwnProperty('placeholder') ? <TextField label={t(item.label)} placeholder={t(item.placeholder)} half={false} />
+                            : <TextField label={t(item.label)} />)
+                    }
+                </div>
+                <Button>
+                    {t('button')}
+                </Button>
             </form>
         </div>
     );

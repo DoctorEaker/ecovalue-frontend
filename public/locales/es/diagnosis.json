@@ -3,5 +3,22 @@
     "subtitle": "Formulario de diagnóstico",
     "frequency_question" : "¿Con qué frecuencia realiza sus estados financieros?",
     "yearly": "Anual",
-    "quarterly": "Trimestral"
+    "quarterly": "Trimestral",
+    "monthly": "Mensual",
+    "current_asset": "Activo corriente",
+    "current_liability": "Pasivo corriente",
+    "last_sell": "Ventas mes/trimestre/año pasado",
+    "penultime_sell": "Ventas mes/trimestre/año antepasado",
+    "asset": "Activo",
+    "liability": "Pasivo",
+    "free_cash_flow": "Flujo de caja libre",
+    "cost_commodity": "Costo mercancía vendida",
+    "operational_expenses": "Gastos operacionales",
+    "net_profit": "Utilidad neta",
+    "pay_day_supplier": "Días promedio en los que se paga a los proveedores",
+    "amount_employee" : "Número de empleados actualmente",
+    "foundation_year": "Año de fundación de la empresa",
+    "days_placeholder": "25 días",
+    "number_placeholder" : "100 empleados",
+    "button": "Confirmar"
 }
