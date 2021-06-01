@@ -1,0 +1,17 @@
+.container{
+   height: 100vh;
+   .temporal{
+      display:flex;
+      height: calc(100vh - 3.7rem);
+
+      .content{
+         @apply bg-eco-green-300;
+         margin-bottom: 0.9375rem;
+         padding: 2.5rem;
+         box-shadow: inset 0rem 0rem 1.4375rem rgba(57, 87, 192, 0.08);
+         flex:100%;
+         border-radius: 8px;
+        }
+   }
+   
+}

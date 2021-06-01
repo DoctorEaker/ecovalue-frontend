@@ -1,0 +1,17 @@
+.container{
+    background-color: white;
+
+    width:100vw;
+    height: 3.7rem;
+    padding:10px;
+    .logo-container{
+        @apply flex items-center justify-between;
+        height: 100%;
+        width:18%;
+        .brand-name{
+            font-weight: 800;
+            margin-bottom: 0;
+            color:#2857D1;
+        }
+    }
+}
